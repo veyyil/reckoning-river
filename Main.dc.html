@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reckoning River landing page</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Figtree:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F3EEE2}
+html{scroll-behavior:smooth}
+a{color:inherit}a:hover{opacity:.78}
+a:focus-visible{outline:2px solid #9C6A43;outline-offset:4px}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+.rr-paper{background-image:url(./assets/a092b13292677e50379dd2f2f09c2ec5.png);background-size:256px}
+.rr-display{font-family:'Fraunces',Georgia,serif;font-optical-sizing:auto;font-variation-settings:"SOFT" 100,"WONK" 0}
+@media (max-width: 640px){.rr-nav-sec{display:none}}
+@keyframes rr-flow{to{stroke-dashoffset:-400}}
+.rr-flow{stroke-dasharray:6 14;animation:rr-flow 50s linear infinite}
+.rr-flow-slow{stroke-dasharray:2 20;animation:rr-flow 90s linear infinite}
+@media (prefers-reduced-motion:reduce){.rr-flow,.rr-flow-slow{animation:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:no-preference){
+@keyframes rr-drift{from{transform:scale(1.03)}to{transform:scale(1.1) translate(-1.5%,-1%)}}
+@keyframes rr-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes rr-rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes rr-sway{from{transform:rotate(-2deg) translateY(0)}to{transform:rotate(2deg) translateY(-10px)}}
+.rr-img img{animation:rr-drift 36s ease-in-out infinite alternate}
+.rr-contour{animation:rr-sway 18s ease-in-out infinite alternate;transform-origin:center}
+header h1{animation:rr-in 1.6s ease-out both}
+@supports (animation-timeline:view()){
+section h2,section p,.rr-card{animation:rr-rise linear both;animation-timeline:view();animation-range:entry 0% cover 26%}
+}
+}
+</style>
+</helmet>
+<div style="font-family: 'Figtree', 'Segoe UI', Helvetica, Arial, sans-serif; color: #1E2B23; background-color: #F3EEE2; font-size: 19px; line-height: 1.65">
+
+<header id="top" class="rr-paper" style="position: relative; background-color: #1E3326; color: #F3EEE2; min-height: 760px; display: flex; flex-direction: column; overflow: hidden">
+<div class="rr-img" style="position: absolute; inset: 0; overflow: hidden">
+<img src="./assets/fb09ff97e506443615332405f0eedcd4.jpg" alt="A still river at first light, with mist over the water, a pale sandbank and forested cliffs reflected in the surface" style="width: 100%; height: 100%; object-fit: cover; object-position: 68% center; display: block">
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: linear-gradient(180deg, rgba(23,42,31,0.55) 0%, rgba(23,42,31,0) 30%), linear-gradient(90deg, rgba(23,42,31,0.8) 0%, rgba(23,42,31,0.42) 55%, rgba(23,42,31,0.05) 100%)"></div>
+<nav aria-label="Main" style="position: relative; z-index: 2; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px 40px; padding: 28px clamp(20px, 5vw, 80px)">
+<a href="#top" style="display: block; text-decoration: none; line-height: 0"><img src="./assets/37fc4f97b3d03a3a13d0b14ace518330.png" alt="Reckoning River" style="display: block; height: clamp(84px, 11vw, 156px); width: auto"></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 32px; font-size: 16px; font-weight: 500">
+<a href="#idea" class="rr-nav-sec" style="text-decoration: none; padding: 12px 0">Our Perspective</a>
+<a href="#approach" class="rr-nav-sec" style="text-decoration: none; padding: 12px 0">Our Approach</a>
+<a href="#vision" class="rr-nav-sec" style="text-decoration: none; padding: 12px 0">Our Vision</a>
+<a href="#contact" style="text-decoration: none; padding: 10px 20px; border: 1px solid rgba(243,238,226,0.6); border-radius: 999px">Get in touch</a>
+</div>
+</nav>
+<div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 72px clamp(20px, 5vw, 80px) clamp(120px, 14vw, 190px); max-width: 1100px; position: relative; z-index: 2">
+<h1 class="rr-display" style="font-weight: 400; font-size: clamp(40px, 5.6vw, 88px); line-height: 1.02; letter-spacing: -0.02em">Nature is beautifully complex.<span style="display: block; font-size: 0.6em; line-height: 1.16; letter-spacing: -0.01em; margin-top: 0.4em">Can the right tools and data help us understand it, and help others see it clearly?</span></h1>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 140" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -1px; width: 100%; height: clamp(60px, 9vw, 140px); z-index: 1">
+<path d="M0,84 C160,40 340,118 560,92 C780,66 900,22 1110,48 C1270,68 1370,98 1440,86 L1440,140 L0,140 Z" fill="#F3EEE2"></path>
+<path class="rr-flow" d="M0,70 C170,26 350,104 570,78 C790,52 910,8 1120,34 C1280,54 1380,84 1440,72" fill="none" stroke="#F3EEE2" stroke-opacity="0.55" stroke-width="1.4"></path>
+</svg>
+</header>
+
+<section id="idea" class="rr-paper" style="background-color: #F3EEE2; display: flex; flex-wrap: wrap; align-items: stretch">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; justify-content: center; gap: 24px; padding: clamp(48px, 6vw, 100px) clamp(20px, 5vw, 88px)">
+<h2 class="rr-display" style="font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1.08; letter-spacing: -0.015em; color: #1E3326; max-width: 13em">Working with nature starts with understanding it.</h2>
+<p style="max-width: 32em">Ecosystems are complex adaptive systems. Living organisms, water, soil, climate and physical processes interact continuously, shaping one another through cycles and feedback loops. Together they keep changing, season after season and year after year.</p>
+<p style="max-width: 32em">That complexity makes natural systems resilient. It also makes them hard to read. A change in one place can show up somewhere else. Some effects build quietly for years. Some can push systems past thresholds that are difficult to reverse. As human activity places more pressure on natural systems, understanding these changes becomes essential.</p>
+<p style="max-width: 32em; color: #515E54">Whether you study nature, protect it, restore it, manage it, govern it, fund it, assess it, communicate it or build around it, your work depends on understanding how it works. The more clearly we understand natural systems, the better equipped we are to make decisions that work with their dynamics.</p>
+</div>
+<div class="rr-img" style="position: relative; overflow: hidden; flex: 1 1 480px; min-height: clamp(380px, 52vw, 820px); background-color: #3F5E43">
+<img src="./assets/99b94d793bcddb648e656429fd7fd274.jpg" alt="An elevated view of a river meandering through forest, wetland and grassland, with mist rising and hills beyond" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+</section>
+
+<div aria-hidden="true" style="background-color: #F3EEE2; line-height: 0"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: clamp(40px, 6vw, 90px)"><path d="M0,58 C220,18 420,82 700,52 C960,24 1180,72 1440,40 L1440,90 L0,90 Z" fill="#E1E6D3"></path></svg></div>
+
+<section class="rr-paper" style="position: relative; overflow: hidden; background-color: #E1E6D3; display: flex; flex-wrap: wrap; align-items: stretch">
+<div class="rr-img" style="position: relative; overflow: hidden; flex: 1 1 480px; min-height: clamp(360px, 46vw, 760px); background-color: #CBD2BB">
+<img src="./assets/eec606bca51a672203ae2ec05a5ae4b9.jpg" alt="Layered paper cut scene of a field team studying a map on the bonnet of a vehicle, with forest, hills and a river behind" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+<div style="position: relative; overflow: hidden; flex: 1 1 480px; display: flex; flex-direction: column; justify-content: center; gap: 24px; padding: clamp(48px, 6vw, 100px) clamp(20px, 5vw, 88px)">
+<svg class="rr-contour" aria-hidden="true" viewBox="0 0 400 400" style="position: absolute; right: -160px; top: -120px; width: 520px; height: 520px; pointer-events: none">
+<g fill="none" stroke="#3F5E43" stroke-opacity="0.22" stroke-width="1.2">
+<path d="M200,30 C300,38 372,112 366,206 C360,300 286,372 192,366 C98,360 34,288 40,196 C46,108 108,24 200,30 Z"></path>
+<path d="M200,70 C276,76 334,132 328,206 C322,280 266,334 194,328 C122,322 74,266 78,196 C82,126 130,66 200,70 Z"></path>
+<path d="M202,110 C254,114 294,152 290,206 C286,258 246,294 196,290 C146,286 112,248 116,198 C120,148 154,106 202,110 Z"></path>
+<path d="M204,150 C232,152 254,176 252,206 C250,236 226,256 198,254 C170,252 152,230 154,202 C156,174 178,148 204,150 Z"></path>
+</g>
+</svg>
+<h2 class="rr-display" style="position: relative; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1.08; letter-spacing: -0.015em; color: #1E3326; max-width: 13em">And the systems we build around it.</h2>
+<p style="position: relative; max-width: 32em">Human systems, like natural systems, are shaped by many interacting parts. Roles, incentives, resources, processes, protocols, information flows and decisions all influence how work gets done.</p>
+<p style="position: relative; max-width: 32em">Understanding these systems shows us where work can become clearer, more efficient and better aligned with the natural systems it exists to serve.</p>
+<p style="position: relative; max-width: 32em; color: #4A5649">For those of us working with nature, this matters even more. Our human systems have to keep pace with the complexity of the living systems we work with, so that what we learn and decide stays in step with how nature actually behaves.</p>
+</div>
+</section>
+
+<div aria-hidden="true" style="background-color: #E1E6D3; line-height: 0"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: clamp(40px, 6vw, 90px)"><path d="M0,34 C260,74 520,10 780,42 C1040,74 1240,22 1440,48 L1440,90 L0,90 Z" fill="#F3EEE2"></path></svg></div>
+
+<section class="rr-paper" style="background-color: #F3EEE2; display: flex; flex-wrap: wrap; align-items: stretch">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; justify-content: center; gap: 24px; padding: clamp(48px, 6vw, 100px) clamp(20px, 5vw, 88px)">
+<h2 class="rr-display" style="font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1.08; letter-spacing: -0.015em; color: #1E3326; max-width: 14em">Careful observation, supported by the right tools, can reveal a great deal.</h2>
+<p style="max-width: 33em">Understanding nature depends on observation. When people record what they see consistently and carefully, even simple processes can build a detailed picture of how natural systems change over time.</p>
+<p style="max-width: 33em">Technology can strengthen these processes by making information easier to collect, organise, connect and interpret. It does not always need to be sophisticated. What matters is whether it fits the people using it, the environment they work in and the questions they are trying to answer.</p>
+<p style="max-width: 33em; color: #515E54">When the right information is gathered in the right way, patterns begin to emerge. We can see what is changing, where, and what may need attention. That is how data becomes something that supports better decisions.</p>
+</div>
+<div class="rr-img" style="position: relative; overflow: hidden; flex: 1 1 480px; min-height: clamp(380px, 52vw, 820px); background-color: #C9A97F">
+<img src="./assets/9c6f885cbc52f17664804a202e1156ce.jpg" alt="Two colour linocut print of a forest guard kneeling on a riverbank, recording tracks on a phone" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+</section>
+
+<div aria-hidden="true" style="background-color: #F3EEE2; line-height: 0"><svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display: block; width: 100%; height: clamp(44px, 7vw, 100px)"><path d="M0,62 C200,22 430,92 680,60 C930,28 1160,84 1440,46 L1440,100 L0,100 Z" fill="#172A1F"></path></svg></div>
+
+<section class="rr-paper" style="background-color: #172A1F; color: #ECE7D8">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(48px, 6vw, 96px) clamp(20px, 5vw, 80px) 0; display: flex; flex-direction: column; gap: clamp(48px, 6vw, 84px)">
+<div style="display: flex; flex-wrap: wrap; gap: clamp(32px, 6vw, 96px); align-items: flex-start">
+<h2 class="rr-display" style="flex: 1.3 1 440px; font-weight: 400; font-size: clamp(40px, 5.4vw, 84px); line-height: 1.04; letter-spacing: -0.02em">Communicating what we find is just as important.</h2>
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 20px; color: #CFD3C1">
+<p>Understanding nature is only part of the work. What we learn also has to reach the people who make decisions about it. Funders, government officials, partners and the public all shape what happens to natural systems, and they often do not come from a scientific background.</p>
+<p>Here, an important gap appears. The deeper someone understands a subject, the harder it can become to see how that knowledge looks to someone encountering it for the first time. This is the curse of knowledge. What feels obvious to an expert can look like an abstract table, a dense report or a set of numbers to everyone else.</p>
+<p>We keep encountering this in conversations with conservation organisations. The evidence is often strong and the work is important, yet its meaning does not always reach the people who need it most. When that happens, the urgency, scale and depth of what is happening in nature can be lost.</p>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px">
+<p class="rr-display" style="font-style: italic; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; color: #B9D0B4">The same evidence can mean different things to different people.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px">
+<div class="rr-card" style="background-color: rgba(225,230,211,0.07); border: 1px solid rgba(225,230,211,0.16); border-radius: 36px 36px 36px 8px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9B48F">The grantor</h3>
+<p class="rr-display" style="font-style: italic; font-size: 25px; line-height: 1.28">What changed, and what should we support next?</p>
+</div>
+<div class="rr-card" style="background-color: rgba(225,230,211,0.07); border: 1px solid rgba(225,230,211,0.16); border-radius: 36px 36px 36px 8px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9B48F">The government</h3>
+<p class="rr-display" style="font-style: italic; font-size: 25px; line-height: 1.28">What needs attention or action?</p>
+</div>
+<div class="rr-card" style="background-color: rgba(225,230,211,0.07); border: 1px solid rgba(225,230,211,0.16); border-radius: 36px 36px 36px 8px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9B48F">The public</h3>
+<p class="rr-display" style="font-style: italic; font-size: 25px; line-height: 1.28">Why does this matter to us?</p>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; margin-top: clamp(48px, 6vw, 84px)">
+<div class="rr-img" style="position: relative; overflow: hidden; flex: 1.2 1 480px; min-height: clamp(340px, 40vw, 680px); background-color: #2C4434">
+<img src="./assets/d903125b4eb8c32c355eeeca20a34e0d.jpg" alt="Embroidered scene of a person under a large tree by a river explaining a map and chart to an official, villagers and a visitor" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+<div style="flex: 1 1 400px; display: flex; flex-direction: column; justify-content: center; padding: clamp(48px, 6vw, 100px) clamp(20px, 5vw, 88px)">
+<p style="color: #CFD3C1; max-width: 30em">That is where thoughtful communication makes the difference. The same information can be framed, visualised and explained differently depending on who needs to understand it, while the underlying science stays the same. When data is shown in ways that are intuitive and easy to grasp, people outside science can understand what is at stake and make better decisions.</p>
+</div>
+</div>
+</section>
+
+<div aria-hidden="true" style="background-color: #172A1F; line-height: 0"><svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display: block; width: 100%; height: clamp(44px, 7vw, 100px)"><path d="M0,40 C240,82 470,14 740,46 C1010,78 1220,24 1440,56 L1440,100 L0,100 Z" fill="#F3EEE2"></path></svg></div>
+
+<section id="approach" class="rr-paper" style="background-color: #F3EEE2; display: flex; flex-wrap: wrap; align-items: stretch">
+<div class="rr-img" style="position: relative; overflow: hidden; flex: 1.1 1 480px; min-height: clamp(360px, 46vw, 760px); background-color: #D9C29C">
+<img src="./assets/9a34f2e57724c41d4ac9354408bf104d.jpg" alt="Collage of pressed leaves and handmade paper showing a river linking forest, fields, a village and a field team, with arrows connecting them" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; justify-content: center; gap: 24px; padding: clamp(48px, 6vw, 100px) clamp(20px, 5vw, 88px)">
+<p style="display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5A36"><svg aria-hidden="true" viewBox="0 0 36 10" style="width: 36px; height: 10px; flex: none"><path d="M1,5 C6,1 10,9 16,5 C22,1 26,9 35,5" fill="none" stroke="#8A5A36" stroke-width="1.5"></path></svg>Our Approach</p>
+<h2 class="rr-display" style="font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1.08; letter-spacing: -0.015em; color: #1E3326; max-width: 13em">This is what we set out to explore.</h2>
+<p style="max-width: 32em">At Reckoning River, we are deeply curious about understanding nature and the human systems built around it. That curiosity leads us to explore how data and technology can support ecological monitoring, and how what we observe can travel all the way from data to decision.</p>
+<p style="max-width: 32em">We believe every challenge should first be understood as a system. That means looking at the natural system, the human system working with it, and the way the two interact. And technology comes only after those relationships are understood, and only when it fits both the human and natural processes involved.</p>
+<p style="max-width: 32em; color: #515E54">We ground our approach in systems thinking, using frameworks and methodologies to understand how natural systems, human systems and the tools around them interact. We are continuously exploring approaches that help shape human processes around natural systems and strengthen the synergy between people and nature.</p>
+</div>
+</section>
+
+<section id="vision" class="rr-paper" style="position: relative; overflow: hidden; background-color: #1E3326; color: #F3EEE2">
+<div class="rr-img" style="position: absolute; inset: 0; overflow: hidden">
+<img src="./assets/258e2bc7452aa93e1e338828d38176c8.jpg" alt="A forest stream at dusk in a misty valley, with a few green roofed homes glowing among the trees and a timber footbridge" style="width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background-color: rgba(20,32,24,0.42); background-image: linear-gradient(90deg, rgba(20,32,24,0.45) 0%, rgba(20,32,24,0.25) 45%, rgba(20,32,24,0) 80%)"></div>
+<svg aria-hidden="true" viewBox="0 0 1440 100" preserveAspectRatio="none" style="position: absolute; left: 0; top: -1px; width: 100%; height: clamp(40px, 6vw, 90px); z-index: 1"><path d="M0,0 L1440,0 L1440,40 C1200,78 980,18 720,48 C460,78 220,22 0,52 Z" fill="#F3EEE2"></path></svg>
+<div style="position: relative; z-index: 1; max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: clamp(110px, 12vw, 170px) clamp(20px, 5vw, 80px) clamp(130px, 14vw, 200px)">
+<div style="max-width: 780px; margin-left: clamp(0px, 14vw, 260px); display: flex; flex-direction: column; gap: 26px; text-shadow: 0 1px 18px rgba(12,20,15,0.55)">
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #E6D8B8">Our Vision</p>
+<h2 class="rr-display" style="font-weight: 400; font-size: clamp(42px, 5.6vw, 84px); line-height: 1.02; letter-spacing: -0.02em; max-width: 11em; margin-top: -8px">A civilisation that grows with nature, not away from it.</h2>
+<p style="font-size: clamp(18px, 1.35vw, 20px); color: #F1EEE3">Imagine a future where human progress and ecological health are not treated as opposing goals. Rivers, forests and wetlands flourish alongside advanced towns and infrastructure. The systems we build, the decisions we make and the technologies we use are all shaped by a deeper understanding of the living world.</p>
+<p style="font-size: clamp(18px, 1.35vw, 20px); color: #F1EEE3">This is what human nature synergy means to us. A civilisation that is advanced and deeply connected to the natural world, where people and nature can thrive together.</p>
+<p style="font-size: clamp(18px, 1.35vw, 20px); color: #F1EEE3">It is our vision because everything we explore points toward it. Each time we understand nature a little better, build human systems that fit it a little more closely, and help others see it a little more clearly, we move one step nearer.</p>
+<p class="rr-display" style="font-weight: 600; font-size: clamp(26px, 2.4vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin-top: 12px">This is the civilisation we want to help architect.</p>
+</div>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -1px; width: 100%; height: clamp(40px, 6vw, 90px); z-index: 1"><path d="M0,52 C250,14 520,80 780,46 C1040,12 1250,66 1440,38 L1440,90 L0,90 Z" fill="#E1E6D3"></path></svg>
+</section>
+
+<section id="contact" class="rr-paper" style="position: relative; overflow: hidden; background-color: #E1E6D3; padding: clamp(56px, 7vw, 110px) clamp(20px, 5vw, 80px) clamp(72px, 8vw, 120px)">
+<svg class="rr-contour" aria-hidden="true" viewBox="0 0 400 400" style="position: absolute; right: -100px; bottom: -140px; width: 560px; height: 560px; pointer-events: none">
+<g fill="none" stroke="#3F5E43" stroke-opacity="0.2" stroke-width="1.2">
+<path d="M200,30 C300,38 372,112 366,206 C360,300 286,372 192,366 C98,360 34,288 40,196 C46,108 108,24 200,30 Z"></path>
+<path d="M200,70 C276,76 334,132 328,206 C322,280 266,334 194,328 C122,322 74,266 78,196 C82,126 130,66 200,70 Z"></path>
+<path d="M202,110 C254,114 294,152 290,206 C286,258 246,294 196,290 C146,286 112,248 116,198 C120,148 154,106 202,110 Z"></path>
+<path d="M204,150 C232,152 254,176 252,206 C250,236 226,256 198,254 C170,252 152,230 154,202 C156,174 178,148 204,150 Z"></path>
+</g>
+</svg>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start; gap: 28px">
+<p style="display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #7A4F2F"><svg aria-hidden="true" viewBox="0 0 36 10" style="width: 36px; height: 10px; flex: none"><path d="M1,5 C6,1 10,9 16,5 C22,1 26,9 35,5" fill="none" stroke="#7A4F2F" stroke-width="1.5"></path></svg>Get in touch</p>
+<h2 class="rr-display" style="font-weight: 400; font-size: clamp(32px, 4vw, 56px); line-height: 1.1; letter-spacing: -0.015em; max-width: 18em; color: #1E3326">Is there something in your work we could explore together?</h2>
+<div style="display: flex; flex-direction: column; gap: 20px; max-width: 36em">
+<p>Maybe you are trying to understand a natural system better, improve the human processes around it, make sense of the information you already collect, or help others understand what you are seeing.</p>
+<p>We would love to learn about how you are working with nature and what you are trying to figure out, and explore the right way forward together, whether that involves data, technology or better systems.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin-top: 8px">
+<a href="mailto:reckoningriver@veyyil.com" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 34px; box-sizing: border-box; background-color: #3F5E43; color: #F3EEE2; font-size: 18px; font-weight: 600; text-decoration: none; border-radius: 999px">Get in touch</a>
+<a href="mailto:reckoningriver@veyyil.com" style="color: #3E4A41; padding: 12px 0">reckoningriver@veyyil.com</a>
+</div>
+</div>
+</section>
+
+<div aria-hidden="true" style="background-color: #E1E6D3; line-height: 0"><svg viewBox="0 0 1440 70" preserveAspectRatio="none" style="display: block; width: 100%; height: clamp(32px, 4.5vw, 70px)"><path d="M0,40 C260,8 540,62 820,34 C1100,6 1280,52 1440,30 L1440,70 L0,70 Z" fill="#1E3326"></path></svg></div>
+
+<footer class="rr-paper" style="background-color: #1E3326; color: #CFD3C1; padding: 20px clamp(20px, 5vw, 80px) 36px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 32px; font-size: 15px">
+<p class="rr-display" style="font-size: 20px; color: #ECE7D8">Reckoning River</p>
+<p>© 2026 Veyyil Robotics Private Limited. All rights reserved.</p>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
